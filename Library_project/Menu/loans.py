@@ -108,6 +108,7 @@ def display_current_loans_for_specific_customer():
     loans = library.get_loans()
     for loan in loans:
         if loan['customer_id'] == customer_id and loan['return_date'] is None:
+            
             customer_loans.append(loan)
     pprint(customer_loans)
 
